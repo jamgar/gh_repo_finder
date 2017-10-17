@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Use the title from a page's frontmatter if it has one -->
+  <title><%= current_page.data.title || "Middleman" %></title>
+  <%= stylesheet_link_tag "site" %>
+  <%= javascript_include_tag "site" %>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <body class="w3-light-gray">
+
+    <%= yield %>
+
+  </body>
+</html>
